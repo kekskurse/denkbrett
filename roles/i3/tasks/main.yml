@@ -69,3 +69,7 @@
     mode: 0644
     owner: "{{ foruser }}"
     group: "{{ foruser }}"
+
+- git:
+    repo: 'https://github.com/vivien/i3blocks-contrib.git'
+    dest: /opt/i3blocks-contrib
