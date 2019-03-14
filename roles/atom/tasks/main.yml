@@ -1,4 +1,4 @@
-- name: install firefox
+- name: install atom
   package:
     name: atom
     state: present
