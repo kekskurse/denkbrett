@@ -2,3 +2,8 @@
   package:
     name: mysql-workbench
     state: present
+
+- name: install gnome-keyring
+  package:
+    name: gnome-keyring
+    state: present
