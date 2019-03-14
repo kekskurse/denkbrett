@@ -1,0 +1,5 @@
+- name: Install phpstorm
+  aur:
+    name: phpstorm
+  become: yes
+  become_user: "aur_builder"
