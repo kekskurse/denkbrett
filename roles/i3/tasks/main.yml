@@ -30,6 +30,5 @@
 - name: Install font-awsome
   aur:
     name: otf-font-awesome-5-fre
-    state: present
   become: yes
-  become_user: "{{ foruser }}"
+  become_user: "aur_builder"
