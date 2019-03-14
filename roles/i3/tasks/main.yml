@@ -8,7 +8,7 @@
     state: present
 - name: Add .xinitrc file
   template:
-    src: templates/mosquito_config.j2
-    dest: /etc/mosquitto/conf.d/default.conf
+    src: templates/xinitrc.j2
+    dest: "/home/{{ foruser }}/.xinitrc"
     mode: 0644
   become: yes
