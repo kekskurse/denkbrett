@@ -7,3 +7,20 @@
   package:
     name: vim
     state: present
+
+- name: install zsh
+  package:
+    name: zsh
+    state: present
+
+- name: install zsh-completions
+  package:
+    name: zsh-completions
+    state: present
+
+- name: Add the user '{{ foruser }}'
+  user:
+    name: {{ foruser }}
+    comment: Working User
+    generate_ssh_key: yes
+    shell: /bin/zsh
