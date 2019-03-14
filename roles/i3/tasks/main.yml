@@ -1,3 +1,7 @@
+- name: install xorg-server
+  package:
+    name: xorg-server
+    state: present
 - name: install xorg-xinit
   package:
     name: xorg-xinit
