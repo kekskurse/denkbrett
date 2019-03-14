@@ -26,6 +26,17 @@
     group: "{{ foruser }}"
     mode: 0644
 
+- name: Install grml zsh config
+  get_url:
+    url: https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc
+    dest: "/root/.zshrc"
+    mode: 0644
+
+- name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+  user:
+    name: root
+    shell: /bin/zsh
+
 - name: Add the user '{{ foruser }}'
   user:
     name: "{{ foruser }}"
