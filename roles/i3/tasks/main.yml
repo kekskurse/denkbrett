@@ -95,6 +95,10 @@
     name: compton
     state: present
 
+- name: install feh for background iamge
+  package:
+    name: feh
+    state: present
 
 - name: config Xresources
   template:
