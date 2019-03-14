@@ -95,6 +95,14 @@
     name: compton
     state: present
 
+- name: config compton
+  template:
+    src: templates/compton.j2
+    dest: "/home/{{ foruser }}/.config/compton.conf"
+    mode: 0644
+    owner: "{{ foruser }}"
+    group: "{{ foruser }}"
+
 - name: install feh for background iamge
   package:
     name: feh
