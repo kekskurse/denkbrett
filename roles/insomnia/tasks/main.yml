@@ -1,0 +1,5 @@
+- name: Install font-awsome
+  aur:
+    name: insomnia
+  become: yes
+  become_user: "aur_builder"
