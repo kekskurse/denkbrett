@@ -29,6 +29,11 @@ cd yay
 makepkg -si
 ```
 
+2.2) Install ansible aur helper
+```
+git clone https://github.com/kewlfft/ansible-aur.git ~/.ansible/plugins/modules/aur
+```
+
 3) SSH-Key erzeugen und zugriff auf sich selbst geben
 
 ```

@@ -28,7 +28,7 @@
   become: yes
 
 - name: Install font-awsome
-  yay:
+  aur:
     name: otf-font-awesome-5-fre
     state: present
   become: yes
