@@ -16,7 +16,13 @@
     dest: "/home/{{ foruser }}/.xinitrc"
     mode: 0644
   become: yes
-- name: install ttf-dejavu
+- name: install ttf-dejavu, used for default i3 config
   package:
     name: ttf-dejavu
     state: present
+- name: Add i3 config file
+  template:
+    src: templates/i3config.j2
+    dest: "/home/{{ foruser }}/.config/i3/config"
+    mode: 0644
+  become: yes
