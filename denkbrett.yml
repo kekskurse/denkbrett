@@ -2,3 +2,4 @@
 - hosts: pc
   roles:
     - common
+    - i3
