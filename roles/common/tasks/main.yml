@@ -21,7 +21,7 @@
 - name: Install grml zsh config
   get_url:
     url: https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc
-    dest: "/home/{{ foruser }}/zshrc"
+    dest: "/home/{{ foruser }}/.zshrc"
     owner: "{{ foruser }}"
     group: "{{ foruser }}"
     mode: 0644
