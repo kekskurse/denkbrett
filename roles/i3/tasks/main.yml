@@ -73,3 +73,8 @@
 - git:
     repo: 'https://github.com/vivien/i3blocks-contrib.git'
     dest: /opt/i3blocks-contrib
+
+- name: install pacman-contrib for i3bar
+  package:
+    name: pacman-contrib
+    state: present
