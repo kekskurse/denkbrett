@@ -103,3 +103,11 @@
     mode: 0644
     owner: "{{ foruser }}"
     group: "{{ foruser }}"
+
+- name: Background Image
+  get_url:
+    url: http://waldfee.me/wp-content/uploads/2019/02/DSC0491-Kopie-768x510.jpg
+    dest: "/home/{{ foruser }}/.bg.jpg"
+    owner: "{{ foruser }}"
+    group: "{{ foruser }}"
+    mode: 0644
