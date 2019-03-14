@@ -22,7 +22,7 @@
   get_url:
     url: https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc
     dest: "/home/{{ foruser }}/zshrc"
-    owner: ""{{ foruser }}"
+    owner: "{{ foruser }}"
     group: "{{ foruser }}"
     mode: 0644
 
