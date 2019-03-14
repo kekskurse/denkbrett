@@ -78,8 +78,14 @@
   package:
     name: pacman-contrib
     state: present
-    
+
 - name: install acpi for i3bar
   package:
     name: acpi
+    state: present
+
+# Install rofi as demnu ersatz
+- name: install rofi for rofi as demnu ersatzt
+  package:
+    name: rofi
     state: present
