@@ -29,6 +29,6 @@
 
 - name: Install font-awsome
   aur:
-    name: otf-font-awesome-5-fre
+    name: otf-font-awesome-5-free
   become: yes
   become_user: "aur_builder"
