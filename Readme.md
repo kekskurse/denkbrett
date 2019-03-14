@@ -21,6 +21,14 @@ ping -c 3 google.de
 pacman -Suy git ansible openssh
 ```
 
+2.1) install yay
+
+```
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
 3) SSH-Key erzeugen und zugriff auf sich selbst geben
 
 ```
@@ -60,7 +68,7 @@ ansible-playbook -i hosts.ini denkbrett.yml
 passwd <username>
 ```
 
-10) reboot 
+10) reboot
 
 # Update
 
@@ -68,3 +76,8 @@ passwd <username>
 
 * common -> common stuff
 * i3 -> install xorg and i3wm
+
+
+# Using
+
+* https://github.com/mnussbaum/ansible-yay
