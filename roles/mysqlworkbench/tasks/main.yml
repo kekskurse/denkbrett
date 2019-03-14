@@ -1,0 +1,4 @@
+- name: install mysql-workbench
+  package:
+    name: mysql-workbench
+    state: present
