@@ -31,3 +31,5 @@
   yay:
     name: otf-font-awesome-5-fre
     state: present
+  become: yes
+  become_user: "{{ foruser }}"
