@@ -1,4 +1,4 @@
-- name: Install font-awsome
+- name: Install insomnia
   aur:
     name: insomnia
   become: yes
