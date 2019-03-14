@@ -48,14 +48,24 @@
     name: i3blocks
     state: present
 
+- file:
+    path: "/home/{{ foruser }}/.config/i3blocks"
+    state: directory
+    owner: "{{ foruser }}"
+    group: "{{ foruser }}"
+    mode: 0755
 - name: config i3 blocks config up
   template:
     src: templates/i3blocks-up.j2
     dest: "/home/{{ foruser }}/.config/i3blocks/config"
     mode: 0644
+    owner: "{{ foruser }}"
+    group: "{{ foruser }}"
 
 - name: config i3 blocks config up
   template:
     src: templates/i3blocks-down.j2
     dest: "/home/{{ foruser }}/.config/i3blocks/config-down"
     mode: 0644
+    owner: "{{ foruser }}"
+    group: "{{ foruser }}"
