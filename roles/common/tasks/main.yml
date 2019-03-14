@@ -24,3 +24,14 @@
     comment: Working User
     generate_ssh_key: yes
     shell: /bin/zsh
+
+- name: install sudo
+  package:
+    name: sudo
+    state: present
+
+- name: Add sudoers  file
+  template:
+    src: templates/sudoers.j2
+    dest: /etc/sudoers
+  become: yes
