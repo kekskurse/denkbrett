@@ -37,3 +37,9 @@
   package:
     name: rxvt-unicode
     state: present
+- name: config rxvt-unicode with Xdefaults
+  template:
+    src: templates/Xdefaults.j2
+    dest: "/home/{{ foruser }}/.Xdefaults"
+    mode: 0644
+  become: yes
