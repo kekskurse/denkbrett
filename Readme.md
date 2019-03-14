@@ -47,7 +47,9 @@ ansible -i hosts.ini all -m ping
 
 6) Check the denkbrett.yml for the roles you want to use
 
-5) Run ansible script
+7) Change the varieables in group:vars/pc.yml
+
+8) Run ansible script
 
 ```
 ansible-playbook -i hosts.ini denkbrett.yml
