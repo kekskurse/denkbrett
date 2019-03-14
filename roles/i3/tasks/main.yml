@@ -26,3 +26,8 @@
     dest: "/home/{{ foruser }}/.config/i3/config"
     mode: 0644
   become: yes
+
+- name: Install font-awsome
+  yay:
+    name: otf-font-awesome-5-fre
+    state: present
