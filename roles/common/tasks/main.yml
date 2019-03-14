@@ -1,0 +1,9 @@
+- name: install htop
+  package:
+    name: htop
+    state: present
+
+- name: install vim
+  package:
+    name: vim
+    state: present
