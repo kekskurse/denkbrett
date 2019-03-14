@@ -32,3 +32,8 @@
     name: otf-font-awesome-5-free
   become: yes
   become_user: "aur_builder"
+
+- name: install rxvt-unicode
+  package:
+    name: rxvt-unicode
+    state: present
