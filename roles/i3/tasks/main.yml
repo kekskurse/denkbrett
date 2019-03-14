@@ -78,3 +78,8 @@
   package:
     name: pacman-contrib
     state: present
+    
+- name: install acpi for i3bar
+  package:
+    name: acpi
+    state: present
