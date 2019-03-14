@@ -42,9 +42,20 @@
     src: templates/Xdefaults.j2
     dest: "/home/{{ foruser }}/.Xdefaults"
     mode: 0644
-  become: yes
 
 - name: install i3blocks
   package:
     name: i3blocks
     state: present
+
+- name: config i3 blocks config up
+  template:
+    src: templates/i3blocks-up.j2
+    dest: "/home/{{ foruser }}/.config/i3blocks/config"
+    mode: 0644
+
+- name: config i3 blocks config up
+  template:
+    src: templates/i3blocks-down.j2
+    dest: "/home/{{ foruser }}/.config/i3blocks/config-down"
+    mode: 0644
