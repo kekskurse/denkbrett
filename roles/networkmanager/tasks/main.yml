@@ -1,0 +1,8 @@
+- name: install networkmanager
+  package:
+    name: networkmanager
+    state: present
+- name: install network-manager-applet
+  package:
+    name: network-manager-applet
+    state: present
