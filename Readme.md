@@ -55,6 +55,13 @@ ansible -i hosts.ini all -m ping
 ansible-playbook -i hosts.ini denkbrett.yml
 ```
 
+9) setzten eines password für den neuen nuzter
+```
+passwd <username>
+```
+
+10) reboot 
+
 # Update
 
 # Roles
