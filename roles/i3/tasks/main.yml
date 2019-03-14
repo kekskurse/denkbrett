@@ -89,3 +89,11 @@
   package:
     name: rofi
     state: present
+
+- name: config Xresources
+  template:
+    src: templates/xresources.j2
+    dest: "/home/{{ foruser }}/.Xresources"
+    mode: 0644
+    owner: "{{ foruser }}"
+    group: "{{ foruser }}"
