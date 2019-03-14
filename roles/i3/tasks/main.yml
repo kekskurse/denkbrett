@@ -90,6 +90,12 @@
     name: rofi
     state: present
 
+- name: install compton for rofi transparent and screen switch animation
+  package:
+    name: compton
+    state: present
+
+
 - name: config Xresources
   template:
     src: templates/xresources.j2
