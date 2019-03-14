@@ -1,0 +1,8 @@
+- name: install xorg-xinit
+  package:
+    name: xorg-xinit
+    state: present
+- name: install i3-wm
+  package:
+    name: i3-wm
+    state: present

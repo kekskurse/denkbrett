@@ -45,6 +45,8 @@ cd denkbrett
 ansible -i hosts.ini all -m ping
 ```
 
+6) Check the denkbrett.yml for the roles you want to use
+
 5) Run ansible script
 
 ```
@@ -52,3 +54,8 @@ ansible-playbook -i hosts.ini denkbrett.yml
 ```
 
 # Update
+
+# Roles
+
+* common -> common stuff
+* i3 -> install xorg and i3wm
