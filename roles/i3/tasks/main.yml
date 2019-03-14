@@ -16,3 +16,7 @@
     dest: "/home/{{ foruser }}/.xinitrc"
     mode: 0644
   become: yes
+- name: install ttf-dejavu
+  package:
+    name: ttf-dejavu
+    state: present
