@@ -43,3 +43,8 @@
     dest: "/home/{{ foruser }}/.Xdefaults"
     mode: 0644
   become: yes
+
+- name: install i3blocks
+  package:
+    name: i3blocks
+    state: present
