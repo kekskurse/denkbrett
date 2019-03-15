@@ -1,5 +1,6 @@
 - name: Install insomnia
   aur:
     name: insomnia
+    skip_installed: true
   become: yes
   become_user: "aur_builder"

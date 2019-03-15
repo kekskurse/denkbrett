@@ -2,9 +2,10 @@
   package:
     name: jre-openjdk
     state: present
-    
+
 - name: Install phpstorm
   aur:
     name: phpstorm
+    skip_installed: true
   become: yes
   become_user: "aur_builder"
