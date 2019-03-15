@@ -1,0 +1,6 @@
+- name: Install phpstorm
+  aur:
+    name: rambox
+    skip_installed: true
+  become: yes
+  become_user: "aur_builder"
