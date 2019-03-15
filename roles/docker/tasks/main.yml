@@ -1,0 +1,10 @@
+- name: install docker
+  package:
+    name: docker
+    state: present
+
+- name: adding existing user '{{ foruser }}' to group docker
+  user:
+    name: "{{ foruser }}""
+    groups: docker
+    append: yes
