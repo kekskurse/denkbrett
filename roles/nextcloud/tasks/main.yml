@@ -1,0 +1,4 @@
+- name: install nextcloud-client
+  package:
+    name: nextcloud-client
+    state: present
