@@ -1,4 +1,4 @@
-- name: Install phpstorm
+- name: Install rambox
   aur:
     name: rambox
     skip_installed: true
