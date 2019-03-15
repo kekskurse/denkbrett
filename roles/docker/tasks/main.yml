@@ -5,6 +5,6 @@
 
 - name: adding existing user '{{ foruser }}' to group docker
   user:
-    name: "{{ foruser }}""
+    name: "{{ foruser }}"
     groups: docker
     append: yes
