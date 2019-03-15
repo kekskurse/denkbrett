@@ -1,6 +1,6 @@
 - name: Install rambox
   aur:
-    name: rambox
+    name: rambox-bin
     skip_installed: true
   become: yes
   become_user: "aur_builder"
