@@ -1,3 +1,8 @@
+- name: install jre-openjdk
+  package:
+    name: jre-openjdk
+    state: present
+    
 - name: Install phpstorm
   aur:
     name: phpstorm
