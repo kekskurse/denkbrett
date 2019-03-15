@@ -3,6 +3,12 @@
     name: docker
     state: present
 
+- name: install docker-compose
+  package:
+    name: docker-compose
+    state: present
+    
+
 - name: adding existing user '{{ foruser }}' to group docker
   user:
     name: "{{ foruser }}"
