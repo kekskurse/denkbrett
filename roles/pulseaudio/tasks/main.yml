@@ -1,0 +1,16 @@
+- name: install pulseaudio
+  package:
+    name: pulseaudio
+    state: present
+
+- name: Install pacmixer
+  aur:
+    name: pacmixer
+    skip_installed: true
+  become: yes
+  become_user: "aur_builder"
+
+- name: install pavucontrol
+  package:
+    name: pavucontrol
+    state: present

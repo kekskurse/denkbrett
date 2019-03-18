@@ -1,4 +1,8 @@
 - name: install keepassx
   package:
     name: keepassx
+    state: absent
+- name: install keepassxc
+  package:
+    name: keepassxc
     state: present

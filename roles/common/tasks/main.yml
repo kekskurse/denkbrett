@@ -58,3 +58,8 @@
 - user:
     name: aur_builder
     group: wheel
+
+- name: install dnsutils
+  package:
+    name: dnsutils
+    state: present

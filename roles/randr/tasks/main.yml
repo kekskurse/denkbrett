@@ -1,0 +1,4 @@
+- name: install arandr
+  package:
+    name: arandr
+    state: present
