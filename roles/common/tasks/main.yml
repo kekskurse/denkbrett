@@ -63,3 +63,19 @@
   package:
     name: dnsutils
     state: present
+
+- file:
+    path: "/home/{{ foruser }}/scripts"
+    state: directory
+    mode: 0755
+
+- name: install maim
+  package:
+    name: maim
+    state: present
+
+- name: Install screenshot tool
+  template:
+    src: templates/maim.j2
+    dest: "/home/{{ foruser }}/scripts/screenshot"
+    mode: 0777
