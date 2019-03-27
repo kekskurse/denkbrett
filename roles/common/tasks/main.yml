@@ -79,3 +79,13 @@
     src: templates/maim.j2
     dest: "/home/{{ foruser }}/scripts/screenshot"
     mode: 0777
+
+- name: install unp
+  package:
+    name: unp
+    state: present
+
+- name: install unzip
+  package:
+    name: unzip
+    state: present

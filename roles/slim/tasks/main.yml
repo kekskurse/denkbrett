@@ -1,0 +1,5 @@
+---
+- name: install slim
+  package:
+    name: slim
+    state: present

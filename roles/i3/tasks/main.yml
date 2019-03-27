@@ -124,3 +124,8 @@
     owner: "{{ foruser }}"
     group: "{{ foruser }}"
     mode: 0644
+
+- name: install i3lock for background iamge
+  package:
+    name: i3lock
+    state: present
