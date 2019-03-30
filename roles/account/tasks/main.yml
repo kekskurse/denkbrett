@@ -8,4 +8,4 @@
 - name: install zsh
   package:
     name: zsh
-    state: presend
+    state: present
