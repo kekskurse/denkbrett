@@ -4,3 +4,8 @@
     comment: Working User
     generate_ssh_key: yes
     shell: /bin/zsh
+
+- name: install zsh
+  package:
+    name: zsh
+    state: presend
