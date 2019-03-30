@@ -20,6 +20,17 @@
   package:
     name: ttf-dejavu
     state: present
+- file:
+    path: "/home/{{ foruser }}/.config/"
+    state: directory
+    owner: "{{ foruser }}"
+    group: "{{ foruser }}"
+
+- file:
+    path: "/home/{{ foruser }}/.config/i3"
+    state: directory
+    owner: "{{ foruser }}"
+    group: "{{ foruser }}"
 - name: Add i3 config file
   template:
     src: templates/i3config.j2
