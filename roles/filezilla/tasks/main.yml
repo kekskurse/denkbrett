@@ -1,0 +1,4 @@
+- name: install filezilla
+  package:
+    name: filezilla
+    state: present

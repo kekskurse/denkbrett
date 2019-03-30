@@ -1,0 +1,6 @@
+- name: Add the user '{{ foruser }}'
+  user:
+    name: "{{ foruser }}"
+    comment: Working User
+    generate_ssh_key: yes
+    shell: /bin/zsh
